@@ -1,0 +1,164 @@
+*{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: #1f1e1d;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ababab;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box; 
+}
+::-webkit-scrollbar-thumb:hover{
+    border: 0;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+/* index */
+.carouselattri{
+    min-height: 93vh;
+    max-width: 100%;
+    background-image: url(/Images/cover.png) ;
+    background-position: center;
+    background-size: cover;
+    position: auto;
+    transition: 0.6s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+/* resume */
+.carouselattrib{
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(/Images/cover.png);
+    background-position: center;
+    background-size: cover;
+    position: cover;
+    transition: 0.6s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}/* resume */
+h1 {
+    text-align: center;
+    color: rgb(224, 176, 79);
+    transform: translate(0,20vh);
+    font-family: 'Quicksand', sans-serif;
+}
+h4{
+    text-align: center;
+    color: rgb(224, 176, 79);
+    transform: translate(0,20vh);
+    font-family: 'Quicksand', sans-serif;
+}
+footer{
+    padding-bottom: 1px;
+}
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* skills */
+.backgroundd{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+
+}
+.backgroundd img{
+    border-radius: 50%;
+}
+.card .mb3{
+    padding-left: 5px;
+}
+/*skills cards*/
+.content{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/*loader*/
+#loader {
+    background-position: cover;
+    color: #ffae00;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 78px;
+    opacity: 0.8;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
+
+    
+  }
+  #loader:before {
+    content: "{";
+    display: inline-block;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+  }
+  #loader:after {
+    content: "}";
+    display: inline-block;
+    animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+  }
+
+  @keyframes pulse {
+    to {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+      
+/*animations*/
+
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0; /* Adjust as needed */
+    width: max-content;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret 1s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}  
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  #myDiv {
+    display: none;
+    text-align: center;
+}
